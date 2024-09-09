@@ -3,10 +3,10 @@
  */
 class FizzBuzz {
 
-    public static void main(String[] args) {
+    public static int doFizzBuzz(int n) {
         int i = 1;
 
-        while (i < 100) {
+        while (i < n) {
 
             // Find out which numbers divide i.
             boolean divisibleBy3 = i % 3 == 0;
@@ -32,8 +32,10 @@ class FizzBuzz {
             }
             i++;
         }
+        return i;
     }
 
-    public static void doFizzBuzz(int i) {
+    public static void main(String[] args) {
+        doFizzBuzz(1000);
     }
 }
